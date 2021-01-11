@@ -2,12 +2,12 @@
 Change the background color of the web page using the textbox (type in a color name/value) or the HTML color picker or using specific buttons.
 
 ### To view
-link: Link to project: https://juel07.github.io/bg-color-changer/
+Link to project: https://juel07.github.io/bg-color-changer/
 
 ### Demo
 ![quick website demo](website-demo-gif.gif)
 
-# Technologies 
+### Technologies 
 - HTML5
 - CSS3
 - JavaScript
