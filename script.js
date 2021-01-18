@@ -1,4 +1,9 @@
 // using input fields, form inputs to change to any color:
+
+// select the button
+const colorChangeBtn = document.querySelector('#colorChangeBtn')
+
+// define functions
 const changeColor = () => {
 
     // change bg color based on input text value
@@ -21,10 +26,13 @@ const changeColor = () => {
 
 }
 
+// add click event listener to button
+colorChangeBtn.addEventListener('click', changeColor)
+
+
 // using buttons to change to specific colors:
 
 // select the button elements
-
 const btnBlue = document.querySelector('#blue')
 const btnPink = document.querySelector('#pink')
 const btnGrey = document.querySelector('#grey')
@@ -42,3 +50,17 @@ btnPink.addEventListener('click', () => {
 btnGrey.addEventListener('click', () => {
     document.body.style.backgroundColor = '#bfbfbf'
 })
+
+// random color generator:
+
+//generate a random number
+const random = (number) => Math.floor(Math.random() * (number + 1));
+
+// change BG color function
+const randomColor = () => {
+    var rndmCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+    document.body.style.backgroundColor = rndmCol;
+}
+
+// add event for button when double clicked
+colorChangeBtn.addEventListener('dblclick', randomColor)
